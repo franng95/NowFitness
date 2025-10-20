@@ -2,107 +2,112 @@
 
 A professional multi-page fitness website showcasing responsive design principles. Built as part of University of Greenwich Web Design coursework, demonstrating proficiency in HTML5, CSS3, and JavaScript fundamentals.
 
-![Homepage Hero](screenshots/home.png)
+![Homepage Hero Section](screenshots/home.png)
+
+## Overview
+
+Now Fitness is a fully functional, multi-page fitness website featuring a modern design, responsive layout, and interactive elements. The site demonstrates core web development skills including semantic HTML, modular CSS architecture, and vanilla JavaScript for form validation and navigation.
 
 ## Features
 
 - **Fully Responsive Design**: Seamless experience across desktop, tablet, and mobile devices
 - **5 Complete Pages**: Home, Workouts, Blog, About Us, Contact
 - **Interactive Navigation**: Mobile-friendly hamburger menu with smooth scrolling
-- **Contact Form**: Client-side validation with visual feedback
+- **Contact Form**: Client-side validation with real-time feedback
 - **Embedded Map**: Google Maps integration for location display
-- **Video Background**: Auto-playing hero section with overlay
+- **Video Background**: Auto-playing hero section with overlay effect
 - **Modern UI**: Card-based layouts, hover effects, smooth transitions
 
-## Pages Overview
+## Pages
 
-### Home Page
-Hero section with video background, featured workouts preview, blog highlights, and company information.
+### Homepage
+Hero section with video background and call-to-action, leading to featured workout programs.
 
-![Workouts Section](screenshots/workouts.png)
+### Featured Workouts
+![Workout Programs](screenshots/workouts.png)
 
-### Workouts
-Showcase of workout programs with visual cards:
-- Full Body Split (beginner-friendly)
-- Upper-Lower Split (intermediate level)
+Visual showcase of workout programs:
+- **Full Body Split**: Beginner-friendly total body workout
+- **Upper-Lower Split**: Intermediate program focusing on upper/lower body sessions
 
-### Blog
-![Blog Section](screenshots/blog.png)
+### Blog Section
+![Blog Cards](screenshots/blog.png)
 
-Content cards linking to fitness articles:
-- Top 10 Full-Body Exercises
-- Creating Upper-Lower Split Routines  
-- Nutrition Tips for Muscle Building
+Content cards with fitness articles:
+- Top 10 Exercises for Full-Body Workouts
+- Creating Effective Upper-Lower Split Routines  
+- Nutrition Tips for Building Muscle
 
 ### Contact Page
 ![Contact Form](screenshots/contact.png)
 
 Functional contact form with:
-- Real-time validation
-- Error messaging
-- Success confirmation
-- Embedded Google Maps
+- Real-time input validation
+- Error messaging for invalid entries
+- Success confirmation feedback
+- Embedded Google Maps showing office location
 
 ## Tech Stack
 
 **Frontend:**
-- HTML5 (semantic markup, accessibility features)
-- CSS3 (Flexbox, Grid, custom properties, media queries)
-- Vanilla JavaScript (form validation, mobile menu)
+- HTML5 (semantic markup, accessibility attributes)
+- CSS3 (Flexbox, Grid, media queries, custom properties)
+- Vanilla JavaScript (form validation, mobile menu toggle)
 
-**Libraries & APIs:**
+**External Resources:**
 - Google Maps Embed API
-- Custom responsive navigation
+- Custom video background
 
 **Design Principles:**
-- Mobile-first approach
-- Modular CSS architecture (separate files per component)
-- Accessible form labels and ARIA attributes
+- Mobile-first responsive approach
+- Modular CSS architecture (component-based files)
+- Accessible forms with proper labels and ARIA attributes
 
 ## Project Structure
 ```
 NowFitness/
 ├── index.html          # Main homepage
-├── contact.html        # Contact page
-├── javascript.js       # Form validation & navigation
+├── contact.html        # Contact page with form
+├── javascript.js       # Form validation & navigation logic
 ├── css/
-│   ├── base.css       # Global styles, buttons
-│   ├── header.css     # Navigation bar
-│   ├── hero.css       # Hero section with video
-│   ├── workouts.css   # Workout cards layout
-│   ├── blog.css       # Blog grid styling
-│   ├── about.css      # About section
+│   ├── base.css       # Global styles, button components
+│   ├── header.css     # Navigation bar styles
+│   ├── hero.css       # Hero section with video background
+│   ├── workouts.css   # Workout cards grid layout
+│   ├── blog.css       # Blog cards styling
+│   ├── about.css      # About section styles
 │   ├── footer.css     # Footer with social links
 │   ├── contact.css    # Contact form styles
 │   └── media.css      # Responsive breakpoints
-├── images/            # Logo, workout images, social icons
+├── images/            # Logo, workout graphics, social icons
 ├── videos/            # Hero background video
-└── screenshots/       # README documentation
+└── screenshots/       # Documentation images
 ```
 
 ## How to View
 
-**Option 1: Local**
-1. Download/clone the repository
+**Local Setup:**
+1. Clone or download the repository
 2. Open `index.html` in any modern browser
 3. Navigate between pages using the menu
 
-**Option 2: GitHub Pages** (if deployed)
-Visit: `https://franng95.github.io/NowFitness`
+**GitHub Pages Deployment:**
+Can be deployed to `https://franng95.github.io/NowFitness`
 
-## Key Features Demonstrated
+## Key Technical Features
 
 ### Responsive Design
-- CSS Grid for flexible layouts
-- Flexbox for component alignment  
-- Media queries for mobile (<768px)
-- Hamburger menu for small screens
+- CSS Grid for flexible workout/blog card layouts
+- Flexbox for component alignment and spacing
+- Media queries for mobile breakpoint (<768px)
+- Collapsible hamburger menu for small screens
 
 ### Form Validation (JavaScript)
 ```javascript
-// Email validation regex
+// Email validation with regex
 if (!/\S+@\S+\.\S+/.test(email)) {
     messageContent.textContent = 'Please enter a valid email address.';
+    messageContent.style.color = 'red';
 }
 ```
 
@@ -113,30 +118,31 @@ html {
 }
 ```
 
-### Hover Effects
-All interactive elements include:
+### Interactive Hover Effects
+All buttons and cards include:
 - Color transitions
-- Scale transforms
+- Scale transforms on hover
 - Box shadow changes
 
 ## What I Learned
 
 **HTML/CSS:**
-- Building semantic, accessible markup
-- Creating reusable CSS components
-- Implementing responsive design patterns
-- Managing multiple stylesheets efficiently
+- Building semantic, accessible markup structure
+- Creating reusable CSS components and design systems
+- Implementing responsive design patterns and breakpoints
+- Managing multiple stylesheets efficiently with modular architecture
 
 **JavaScript:**
 - DOM manipulation and event handling
-- Form validation and user feedback
-- Conditional logic for error states
+- Form validation with conditional logic
+- Providing user feedback for form interactions
+- Mobile menu toggle functionality
 
-**Design:**
-- Visual hierarchy and spacing
-- Color theory and contrast
-- Mobile-first workflow
-- User experience principles
+**Web Design:**
+- Visual hierarchy and consistent spacing
+- Color theory, contrast, and accessibility
+- Mobile-first development workflow
+- User experience principles for navigation and forms
 
 ## Browser Compatibility
 
@@ -144,38 +150,45 @@ Tested and working on:
 - Chrome 90+
 - Firefox 88+
 - Safari 14+
-- Edge 90+
+- Microsoft Edge 90+
 
 ## Future Enhancements
 
-- [ ] Backend integration (Node.js/Express)
-- [ ] Database for workout plans (MongoDB)
-- [ ] User authentication and profiles
-- [ ] Workout tracking functionality
-- [ ] Payment integration for premium plans
-- [ ] Blog CMS for dynamic content
-- [ ] Video tutorials library
-- [ ] Progress photos upload feature
+- [ ] Backend integration with Node.js/Express
+- [ ] Database for storing workout plans (MongoDB/PostgreSQL)
+- [ ] User authentication and profile system
+- [ ] Workout tracking and progress logging
+- [ ] Payment gateway for premium membership
+- [ ] Admin CMS for blog content management
+- [ ] Video tutorial library with streaming
+- [ ] Social features (progress photos, community)
 
 ## Deployment Options
 
-Can be deployed to:
-- **GitHub Pages** (static hosting)
+This static site can be deployed to:
+- **GitHub Pages** (free static hosting)
 - **Netlify** (automatic builds from Git)
-- **Vercel** (with serverless functions)
-- **Traditional hosting** (cPanel, FTP upload)
+- **Vercel** (with optional serverless functions)
+- **Traditional hosting** (cPanel, FTP upload to shared hosting)
+
+## Academic Context
+
+**Course**: Web Design (Foundation Year)  
+**Institution**: University of Greenwich  
+**Year**: 2023  
+**Focus**: HTML5, CSS3, JavaScript fundamentals, responsive design
 
 ## License
 
-Academic project - University of Greenwich Web Design coursework (2023)
+Academic project for educational purposes.
 
 ## Contact
 
-Francisco Navarro  
+**Francisco Navarro**  
 Email: frannavarrogil@gmail.com  
 GitHub: [@franng95](https://github.com/franng95)  
 LinkedIn: [franjng](https://linkedin.com/in/franjng)
 
 ---
 
-**Note**: This is a static demo site. Contact form submissions are validated client-side but not sent to a backend. Map location and contact details are fictional examples.
+**Note**: This is a static demonstration site. The contact form validates input client-side but does not submit to a backend server. Map location and contact details are fictional examples for demonstration purposes.
