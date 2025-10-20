@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us - Now Fitness</title>
+    <link rel="stylesheet" href="css/base.css">
+    <link rel="stylesheet" href="css/header.css">
+    <link rel="stylesheet" href="css/footer.css">
+    <link rel="stylesheet" href="css/contact.css">
+    <link rel="stylesheet" href="css/media.css">
+    <style>
+        /* Contact Section Styles */
+        .contact {
+            padding: 100px 20px;
+            background-color: #fff;
+            text-align: center;
+        }
+
+        .contact-container {
+            max-width: 600px;
+            margin: 0 auto;
+            background: #f9f9f9;
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        .contact h2 {
+            font-size: 36px;
+            margin-bottom: 20px;
+            color: #333;
+        }
+
+        .contact form div {
+            margin-bottom: 15px;
+            text-align: left;
+        }
+
+        .contact label {
+            display: block;
+            margin-bottom: 5px;
+            color: #666;
+        }
+
+        .contact input,
+        .contact textarea {
+            width: 100%;
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            font-size: 16px;
+            font-family: 'Helvetica Neue', Arial, sans-serif;
+            box-sizing: border-box;
+        }
+
+        .contact textarea {
+            height: 100px;
+        }
+
+        /* Message Box Styles */
+        #messageBox {
+            display: none;
+            padding: 10px;
+            margin-bottom: 20px;
+            border-radius: 4px;
+            text-align: center;
+        }
+
+        /* Location Section Styles */
+        .location {
+            padding: 50px 20px;
+            background-color: #f4f4f4;
+            text-align: center;
+        }
+
+        .location h2 {
+            font-size: 32px;
+            margin-bottom: 20px;
+            color: #333;
+        }
+
+        .location p {
+            font-size: 18px;
+            color: #666;
+            margin-bottom: 20px;
+        }
+
+        .location iframe {
+            width: 100%;
+            height: 400px;
+            border: 0;
+            border-radius: 10px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <img src="images/logo.webp" alt="Now Fitness Logo">
+        </div>
+        <div class="menu-icon" onclick="toggleNavigationMenu()">☰</div>
+        <nav>
+            <ul class="nav-menu">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="index.html#workouts">Workouts</a></li>
+                <li><a href="index.html#blog">Blog</a></li>
+                <li><a href="index.html#about-us">About Us</a></li>
+                <li><a href="contact.html">Contact Us</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section class="contact">
+        <div class="contact-container">
+            <h2>Contact Us</h2>
+
+            <div id="messageBox">
+                <p id="messageContent"></p>
+            </div>
+
+            <form id="contactForm">
+                <div>
+                    <label for="name">Name:</label>
+                    <input type="text" id="name" name="name" required>
+                </div>
+                <div>
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+                <div>
+                    <label for="message">Message:</label>
+                    <textarea id="message" name="message" required></textarea>
+                </div>
+                <button type="submit" class="button">Send</button>
+            </form>
+        </div>
+    </section>
+
+    <section class="location">
+        <h2>Or Visit Our Offices</h2>
+        <p>Our Office Address: 123 Greenwich St, London, SE15 1AA, United Kingdom</p>
+        <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2436.084019616798!2d-0.012548884197801852!3d51.481581579633885!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4876035322a5bb7d%3A0xd55d08b93cde5b8d!2sUniversity%20of%20Greenwich!5e0!3m2!1sen!2suk!4v1627045806563!5m2!1sen!2suk"
+            allowfullscreen=""
+            loading="lazy">
+        </iframe>
+    </section>
+
+    <footer>
+        <div class="footer-container">
+            <div class="footer-nav">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="index.html#workouts">Workouts</a></li>
+                    <li><a href="index.html#about-us">About Us</a></li>
+                    <li><a href="index.html#blog">Blog</a></li>
+                </ul>
+            </div>
+            <div class="footer-contact">
+                <p>Contact Us:</p>
+                <p>Email: <a href="mailto:info@nowfitness.com">info@nowfitness.com</a></p>
+                <p>Phone: <a href="tel:+441234567890">+44 1234 567890</a></p>
+                <p>Address: 123 Greenwich St, London, SE15 1AA, United Kingdom</p>
+            </div>
+            <div class="footer-social">
+                <p>Follow Us:</p>
+                <a href="https://www.facebook.com" target="_blank"><img src="images/facebookIcon.png" alt="Facebook" aria-label="Facebook"></a>
+                <a href="https://www.twitter.com" target="_blank"><img src="images/Twitter-X-Logo-Vector-01-2.jpg" alt="Twitter" aria-label="Twitter"></a>
+                <a href="https://www.instagram.com/notgoodisbad/" target="_blank"><img src="images/Instagram_icon.png" alt="Instagram" aria-label="Instagram"></a>
+                <div class="footer-legal">
+                    <a href="privacy.html">Privacy Policy</a> | <a href="terms.html">Terms of Service</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="javascript.js"></script>
+</body>
+</html>
